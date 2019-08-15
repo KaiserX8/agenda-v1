@@ -43,6 +43,12 @@ public class TestaPrograma {
 
         bandoDeDados.edita(filipeNovo);
 
+        bandoDeDados.remove(jota);
+
+        Contato caio = new Contato("Caio Silva", "4564-4874");
+
+        bandoDeDados.salva(caio);
+
         System.out.println("=========================================");
 
         for (Contato contato : bandoDeDados.buscaTodos()) {

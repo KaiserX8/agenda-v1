@@ -21,9 +21,18 @@ public class ContatoRepository {
         return copiaContatos;
     }
 
-    public Contato buscaPeloNome(String michele_silva, String id) {
+    public Contato buscaPeloId(Long id) {
         for (Contato contato : contatos) {
-            if (contato.getNome().equals(id)) {
+            if (contato.getId().equals(id)) {
+                return contato;
+            }
+        }
+        return null;
+    }
+
+    public Contato buscaPeloNome(String nome) {
+        for (Contato contato : contatos) {
+            if (contato.getNome().equals(nome)) {
                 return contato;
             }
         }
@@ -34,13 +43,15 @@ public class ContatoRepository {
         contatos.remove(contato);
     }
 
-    public void edita(Contato contatoAtual, Contato contaNova) {
+    public void edita(Contato contatoAtual, Contato contato) {
         for (Contato c: contatos) {
             if (c.getId().equals(contato.getId())) {
                 int indice = contatos.indexOf(c);
-                contatos.set(indice, contatos);
+                contatos.set(indice, contato);
             }
         }
     }
 
+    public void edita(Contato filipeNovo) {
+    }
 }

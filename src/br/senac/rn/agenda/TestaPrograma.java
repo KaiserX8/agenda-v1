@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TestaPrograma {
 
-    public static void main(String[] args) {
+    public static void main(String[] args, String novoNome) {
 
         ContatoRepository bandoDeDados = new ContatoRepository();
 
@@ -31,14 +31,14 @@ public class TestaPrograma {
         List<Contato> contatos = bandoDeDados.buscaTodos();
 
         for (Contato contato : bandoDeDados.buscaTodos()) {
-            System.out.println(contato.getId() +"-"+ contato.getNome());
+            System.out.println(contato.getId() +"-"+ contato.getNome(novoNome));
         }
 
 //        Contato contatoBuscado = bandoDeDados.buscaPeloNome("Jota Lopes");
 //
 //        System.out.println(contatoBuscado.getFone());
 
-        Contato filipeNovo = bandoDeDados.buscaPeloNome("Filipe Pontes");
+        Contato filipeNovo = bandoDeDados.buscaPeloNome("Filipe Pontes", novoNome);
         filipeNovo.setNome("Filipe Vasco");
 
         bandoDeDados.edita(filipeNovo);
@@ -52,7 +52,7 @@ public class TestaPrograma {
         System.out.println("=========================================");
 
         for (Contato contato : bandoDeDados.buscaTodos()) {
-            System.out.println(contato.getId() +" - "+ contato.getNome());
+            System.out.println(contato.getId() +" - "+ contato.getNome(novoNome));
         }
 
     }

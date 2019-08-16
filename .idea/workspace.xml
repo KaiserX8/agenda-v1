@@ -4,9 +4,12 @@
     <list default="true" id="893dee21-ec71-4de7-a63c-5ff8f9175bfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/TestaPrograma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/TestaPrograma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/model/Contato.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/model/Contato.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/repository/ContatoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/repository/ContatoRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/view/ContatoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/agenda-v1/br/senac/rn/agenda/view/ContatoView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/senac/rn/agenda/TestaPrograma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senac/rn/agenda/TestaPrograma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senac/rn/agenda/controller/ContatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senac/rn/agenda/controller/ContatoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senac/rn/agenda/model/Contato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senac/rn/agenda/model/Contato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/senac/rn/agenda/repository/ContatoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senac/rn/agenda/repository/ContatoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/senac/rn/agenda/view/ContatoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senac/rn/agenda/view/ContatoView.java" afterDir="false" />
     </list>
@@ -98,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

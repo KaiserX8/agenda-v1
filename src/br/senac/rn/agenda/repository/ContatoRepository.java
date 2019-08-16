@@ -30,9 +30,9 @@ public class ContatoRepository {
         return null;
     }
 
-    public Contato buscaPeloNome(String nome) {
+    public Contato buscaPeloNome(String nome, String novoNome) {
         for (Contato contato : contatos) {
-            if (contato.getNome().equals(nome)) {
+            if (contato.getNome(novoNome).equals(nome)) {
                 return contato;
             }
         }

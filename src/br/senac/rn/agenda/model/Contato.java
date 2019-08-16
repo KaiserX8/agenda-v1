@@ -8,14 +8,15 @@ public class Contato {
     private String nome;
     private String fone;
 
-    public Contato() {}
+    public Contato() {
+    }
 
     public Contato(String nome, String fone) {
         this.nome = nome;
         this.fone = fone;
     }
 
-    public  Long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -23,7 +24,7 @@ public class Contato {
         this.id = id;
     }
 
-    public String getNome() {
+    public String getNome(String novoNome) {
         return nome;
     }
 
@@ -31,7 +32,7 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getFone() {
+    public String getFone(String novoFone) {
         return fone;
     }
 
@@ -51,5 +52,13 @@ public class Contato {
     @Override
     public int hashCode() {
         return Objects.hash(nome);
+    }
+
+    public String getFone() {
+        return null;
+    }
+
+    public String getNome() {
+        return null;
     }
 }
